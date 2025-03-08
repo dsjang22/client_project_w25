@@ -3,30 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Success Portal</title>
-</head>
-<body>
 
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <title>Student Success Portal</title>
+
+</head>
+<body>      
     <header>
-        <a href="">Skip to Main Content</a>
-        <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+        <div class="skip"><a href="index.html">Skip to Main Content</a></div>
+        <div class="umsi-image" id="umsi">
+            <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+          </div>
+        <h1>Student Success Portal</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="tutor.html">UMSI Tutoring</a></li>
                 <li><a href="first_gen.html">First Generation</a></li>
                 <li><a href="degree.html">Degree Process</a></li>
             </ul>
         </nav>
-        <h1>Student Success Portal</h1>
     </header>
 
-    <main>
-        <section>
+    <main class="container" id = "main">
+        <section class="home-welcome">
             <h2>Welcome to the UM Grad Success Navigator</h2>
             <p>Your Comprehensive Guide to Resources for Graduate School Success</p>
             <p>This guide is set up to help you be successful inside and outside of the classroom, and we have included the following resources throughout our site:</p>
-            <ol>
+            <ol class="home-list">
                 <li>Academic Resources</li>
                 <li>Physical Health</li>
                 <li>Mental Health</li>
@@ -35,10 +41,10 @@
             </ol>
         </section>
 
-        <section>
+        <section class="physical-health">
             <h2>Physical Health</h2>
             <p>Keeping your body healthy is essential for success. The University of Michigan offers numerous resources to help you stay in top physical condition:</p>
-            <article>
+            <article class="UHS-article" id = "UHS">
                 <h3>University Health Service (UHS)</h3>
                 <figure>
                     <img src="images/UHS.jpg" alt="University Health Services building">
@@ -46,7 +52,7 @@
                 </figure>
                 <p>Access comprehensive medical care, including routine check-ups, vaccinations, and specialist referrals.</p>
             </article>
-            <article>
+            <article class="recreational-article" id ="recreational">
                 <h3>Recreational Sports</h3>
                 <figure>
                     <img src="images/UMSI_CampusFall_UMSIBackpack_02.jpg" alt="A student wears a UMSI backpack in fall on the drag.">

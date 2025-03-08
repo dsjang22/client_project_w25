@@ -1,0 +1,145 @@
+/* General Styles */
+body {
+    font-family: 'ABeeZee';
+    line-height: 1.6;
+    background: #ffcb05;
+    color: #333;
+}
+
+a:hover, a:focus {
+    text-decoration: underline;
+    border: 2px solid #000;
+}
+
+/* Skip to Main Content Link */
+.skip a {
+    position: absolute;
+    top: -50px;
+    background: #ffcb05; /* Ensure visibility */
+    color: #00274C;
+    padding: 8px;
+    text-decoration: none;
+}
+
+.skip a:focus {
+    top: 30px;
+    right: 30px;
+}
+
+
+
+/* Header & Navigation */
+header, nav {
+    display: grid;                      
+    grid-template-columns: 1fr;
+    background: #00274C;
+    color: #ffffff;
+    text-align: center;
+    padding: 16px;
+}
+
+header {
+    gap: 16px;
+    justify-items: center;
+}
+
+header a, footer a {
+    color: #ffcb05;
+    font-weight: bold;
+}
+
+nav {
+    grid-row: 4 / 5;
+    display: flex;
+    align-self: center;
+}
+
+nav ul {
+    display: flex;
+    gap: 16px;
+}
+
+nav ul li a.active {  
+    font-size: 20px;
+    padding: 8px;
+    background: #ffcb05;
+    color: #00274C;
+}
+
+/* Image Styles */
+img {
+    display: block;
+    margin: 15px auto;
+    border-radius: 5px;
+    width: 300px; 
+    height: auto;
+}
+
+.umsi-image img {
+    width: 100px;
+}
+
+/* Grid Layout */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 16px;
+    padding: 16px;
+}
+
+/* Section Layout */
+.skip, .umsi-image, h1 {
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+/* .home-welcome {
+    grid-column: 1 / -1;
+} */
+
+.skip { 
+    grid-row: 1 / 2; 
+}
+
+.umsi-image { 
+    grid-row: 2 / 3; 
+}
+
+h1 { 
+    grid-row: 3 / 4; 
+}
+
+
+/* Main Content */
+main {
+    max-width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #fff;
+    font-size: 50px;
+}
+
+h2, h3 {
+    color: #00274C;
+    font-size: 30px;
+}
+
+ol {
+    padding-left: 20px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #00274C;
+    color: #fff;
+    margin-top: 20px;
+}
