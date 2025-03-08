@@ -48,6 +48,54 @@ header a, footer a {
     font-weight: bold;
 }
 
+
+/* Image Styles */
+img {
+    display: block;
+    margin: 15px auto;
+    border-radius: 5px;
+    width: 100%; 
+    height: auto;
+}
+
+.umsi-image img {
+    width: 100px;
+}
+
+/* Grid Layout */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+}
+
+section {
+    text-align: center;
+    /* the parent container must be a grid container for these to work*/
+    align-self: center;           /* Centers horizontally within its grid cell */
+    justify-self: center; 
+    overflow: hidden;
+    padding: 15px; 
+}
+
+/* SAME FOR ALL THE PAGES */
+.skip, .umsi-image, h1 {
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+.skip { 
+    grid-row: 1 / 2; 
+}
+
+.umsi-image { 
+    grid-row: 2 / 3; 
+}
+
+h1 { 
+    grid-row: 3 / 4; 
+}
+
 nav {
     grid-row: 4 / 5;
     display: flex;
@@ -66,54 +114,9 @@ nav ul li a.active {
     color: #00274C;
 }
 
-/* Image Styles */
-img {
-    display: block;
-    margin: 15px auto;
-    border-radius: 5px;
-    width: 300px; 
-    height: auto;
-}
-
-.umsi-image img {
-    width: 100px;
-}
-
-/* Grid Layout */
-.container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 16px;
-    padding: 16px;
-}
-
-/* Section Layout */
-.skip, .umsi-image, h1 {
-    grid-column: 1 / -1;
-    text-align: center;
-}
-
-/* .home-welcome {
-    grid-column: 1 / -1;
-} */
-
-.skip { 
-    grid-row: 1 / 2; 
-}
-
-.umsi-image { 
-    grid-row: 2 / 3; 
-}
-
-h1 { 
-    grid-row: 3 / 4; 
-}
-
-
 /* Main Content */
 main {
-    max-width: 90%;
+    max-width: 100%;
     margin: 20px auto;
     padding: 20px;
     background: #ffffff;
